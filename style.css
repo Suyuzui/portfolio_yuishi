@@ -1,0 +1,8 @@
+.body {
+    margin: 10%;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+}

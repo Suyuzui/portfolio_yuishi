@@ -14,6 +14,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+
+## Unavailable Scripts
+
+In the project directory, you cannot run:
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\

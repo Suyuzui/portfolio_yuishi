@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yuishi Works</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="works_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header class="header">
         <div class="header_inner inner">
             <h3 class="header_title"><a href="index.html">Yui Suzuki's Portfolio</a></h3>
+            <div class="responsive_btn">
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+            </div>
             <nav class="header_nav">
                 <ul class="header_lists">
                     <li class="header_item"><a class="header_link" href="#">About Me</a></li>
@@ -19,5 +25,22 @@
             </nav>
         </div>
     </header>
+    <main>
+        <div id="wrapper">
+            <h2>Works</h2>
+            <div id="buttons">
+              <button value="all" class="button">All</button>
+              <button value="red" class="button">UI/UX design</button>
+              <button value="blue" class="button">Product design</button>
+              <button value="yellow" class="button">GUI design</button>
+              <button value="gray" class="button">Package design</button>
+              <button value="shirt" class="button">Programming</button>
+            </div>
+            <ul id="list">
+              <li class="red skirt"><img src="img/skirt.png" width="150" height="150" alt="item1"></li>
+              <li class="gray jacket"><img src="img/jacket.png" width="150" height="150" alt="item2"></li>
+            </ul>
+          </div>
+    </main>
 </body>
 </html>

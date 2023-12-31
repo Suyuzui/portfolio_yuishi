@@ -5,7 +5,11 @@ a {
 .inner {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 30px;
+}
+
+.header_title a {
+    color: #005085;
 }
 
 .header_inner {
@@ -28,6 +32,7 @@ a {
 }
 
 .tab {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -46,7 +51,6 @@ a {
     justify-content: center;
     width: 32px;
     height: 32px;
-    margin: 0 40px 0 0;
     cursor: pointer;
     position: relative;
     z-index: 10;
@@ -58,11 +62,45 @@ a {
     height: 5px;
     margin: 4px 0;
     margin-left: auto;
+    transition: all 0.3s;
   }
+
+  .menu_line:nth-of-type(1) {
+    top: 0;
+  }
+  
+  .menu_line:nth-of-type(2) {
+    top: 50%;
+    /*transform: translateY(-50%);*/
+  }
+  
+  .menu_line:nth-of-type(3) {
+    bottom: 0;
+  }
+
+  .responsive_btn.active > .menu_line:nth-of-type(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    margin: 0;
+  }
+  
+  .responsive_btn.active > .menu_line:nth-of-type(2) {
+    display: none;
+  }
+  
+  .responsive_btn.active > .menu_line:nth-of-type(3) {
+    bottom: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    margin: 0;
+  }
+
+
 
 @media screen and (max-width: 768px) {
     .responsive_btn {
         display:flex;
+        margin-left: auto;
+        color: #ffffff;
     }
 
     .container {
@@ -73,9 +111,11 @@ a {
     .header {
         position: relative;
       }
+
+    
     .header_nav {
-        background: #aabbff;
-        width: 100%;
+        background: #D2F0F9;
+        width: 65%;
         height: 100vh;
         padding: 80px 0 0 0;
         position: fixed;
@@ -88,11 +128,16 @@ a {
         text-align: center;
     }
     .header_lists li {
-        margin: 0 0 30px;
-        text-align: center;
+        margin: 0 auto;
+        padding: 0 30px;
+        text-align: right;
     }
     .header_item {
         font-size: 20px;
+    }
+
+    .tab {
+        display: block;
     }
 }
 

@@ -1,3 +1,10 @@
+.mt-30 {
+	margin-top: 30px;
+  }
+  .mt-50 {
+	margin-top: 50px;
+  }
+
 #wrapper{
 	max-width: 100%;
 	margin: 0 auto;
@@ -30,14 +37,42 @@
     color:#E9ECEB;
 }
 
-
+#lists {
+	display: flex;
+	text-align: left;
+	margin-right: 5rem;
+}
 
 #lists li {
 	list-style: none;
+	justify-content: center;
 }
+
+#lists li:nth-of-type(1) {
+	justify-content: space-around;
+}
+
+#lists li:nth-of-type(2) {
+	justify-content: space-between;
+}
+
+
 
 @media screen and (max-width: 768px) {
     .button {
         margin-top: 8px;
     }
+
+	.header {
+		top: 0%;
+	}
+
+	#lists {
+		display: block;
+	}
+
+	.bb-30 {
+		margin-bottom: 5rem;
+		border-bottom: 1px solid #a0a0a0;
+	}
 }

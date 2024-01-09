@@ -33,7 +33,7 @@ h1 {
   width: 100%;
   background-color: #fff;
   top: 0%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .inner {
@@ -95,9 +95,11 @@ h1 {
 }
 
 .ml-au {
+  position: relative;
   text-align: center;
   font-weight: bold;
   font-size: 1.5rem;
+  z-index: 0;
 }
 
 a.btn_style {
@@ -288,7 +290,7 @@ a.btn_style::before {
   background: linear-gradient(-45deg, #fafafa, #9a9a9a) fixed;
   padding: 30px;
   border-radius: 3%;
-  z-index: -1;
+  z-index: 0;
 }
 @keyframes GradietionAnimation { 
   0%{background-position:0% 50%}
@@ -394,40 +396,13 @@ a.btn_style::before {
         text-align: center;
     }
     .header_lists li {
+        margin: 0 auto;
         padding: 0 30px;
         text-align: right;
     }
-    
     .header_item {
         font-size: 25px;
-        color: #ffffff;
-        overflow: hidden;
-        text-decoration: none;
-        margin: 5px 10px;
-        background-size: 100%;
-        z-index: 0;
-    }
 
-    .header_item:hover::before {
-      transform: scaleX(1);
-    }
-
-    .header_item:hover {
-      color: #fff;
-    }
-
-    .header_item::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: scaleX(0);
-      transform-origin: 0 50%;
-      width: 100%;
-      height: inherit;
-      border-radius: inherit;
-      background: linear-gradient(82.3deg, #f9c2eb, #8338ec) fixed;
-      transition: all 0.475s;
     }
 
     .menu_active {

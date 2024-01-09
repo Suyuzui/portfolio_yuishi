@@ -26,7 +26,7 @@
 	display:block;
 	color:#1e1e1e;
 	padding:10px 25px;
-	background:#D2F0F9;
+	background:#f0f0f0;
 	border-radius:20px;
 	border:none;
 	display:inline-block;
@@ -43,8 +43,8 @@
 
 
 .button:hover, .button.active{
-	background:#009ADE;
-    color:#E9ECEB;
+	background:linear-gradient(-65deg, #f9c2eb, #8338ec) fixed;
+    color: #f9f9f9;
 }
 
 

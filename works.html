@@ -19,34 +19,50 @@
             <nav class="header_nav">
                 <ul class="header_lists">
                     <li class="header_item"><a class="header_link" href="works.html">Works</a></li>
-                    <li class="header_item"><a class="header_link" href="#">About Me</a></li>
-                    <li class="header_item"><a class="header_link" href="#">Contact</a></li>
+                    <li class="header_item"><a class="header_link" href="aboutme.html">About Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <div id="wrapper">
-            <h2 class="mt-50">Works lists</h2>
+            <h1 class="mt-70">Works lists</h1>
             <div id="buttons">
-              <button value="all" class="button">All</button>
-              <button value="red" class="button">UI/UX design</button>
-              <button value="blue" class="button">Product design</button>
-              <button value="yellow" class="button">GUI design</button>
-              <button value="gray" class="button">Package design</button>
-              <button value="shirt" class="button">Programming</button>
+              <button value="all" class="button" clicked>All</button>
+              <button value="uiux_design" class="button">UI/UX design</button>
+              <button value="product_design" class="button">Product design</button>
+              <button value="gui_design" class="button">GUI design</button>
+              <button value="package_design" class="button">Package design</button>
+              <button value="programming" class="button">Programming</button>
             </div>
             <ul id="lists" class="mt-30">
-              <li class="uiux_design bb-30">
-                <a href="oshioshi.html"><img src="Oshishi.png" width="250" height="280" alt="item1"></a>
-                <h3><span>農家推し活体験</span><br>OshiOishii(推し美味し)</h3>
-              </li>
-              <li class="product_design mt-30 bb-30">
-                <a href="picturebook.html"><img src="ehon.png" width="300" height="200" alt="item2"></a>
-                <h3><span>絵本で非認知能力をのばす</span><br>絵本Webアプリ(Coming soon)</h3>
-            </li>
+                <div class="layout">
+                    <li class="uiux_design bb-30 images">
+                        <a href="oshioshi.html"><p><img src="Group 129.svg" width="250" height="280" alt="item1"><span>詳しく見る</span></p></a>
+                        <h3><span class="ft-16">農家推し活体験</span><br>OshiOishii(推し美味し)</h3>
+                    </li>
+                    <li class="uiux_design programming mt-30 bb-30 images">
+                        <a href="picturebook.html"><p><img src="ehon.png" width="300" height="200" alt="item2"><span></span></p></a>
+                        <h3><span class="ft-16">絵本で非認知能力をのばす</span><br>絵本Webアプリ</h3>
+                    </li>
+                    <li class="product_design bb-30">
+                        <a href=""><p><img src="Group 2.png" width="300" height="200" alt="item2"><span></span></p></a>
+                        <h3><span class="ft-16"></span><br>(Coming soon)</h3>
+                    </li>
+                </div>  
+                <div class="layout">
+                    <li class="gui_design bb-30">
+                        <a href=""><p><img src="Group 2.png" width="300" height="200" alt="item2"><span></span></p></a>
+                        <h3><span class="ft-16"></span><br>(Coming soon)</h3>
+                    </li>
+                    <li class="package_design bb-30">
+                        <a href=""><p><img src="Group 2.png" width="300" height="200" alt="item2"><span></span></p></a>
+                        <h3><span class="ft-16"></span><br>(Coming soon)</h3>
+                    </li>
+                </div>
+              
             </ul>
-          </div>
+        </div>
     </main>
     <footer class="footer">
         <div>

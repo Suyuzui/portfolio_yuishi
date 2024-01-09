@@ -1,17 +1,30 @@
 body {
   margin: 0;
+  font-family:"MS Pゴシック",sans-serif;
 }
-
+  
 a {
     text-decoration-line: none;
 }
 
+
+h1 {
+  font-size: 3rem;
+}
+
+.ft-16 {
+  font-size: 16px;
+}
 
 .mt-30 {
   margin-top: 30px;
 }
 .mt-50 {
   margin-top: 50px;
+}
+
+.mr-70 {
+  margin-right: 70px;
 }
 
 .header {
@@ -71,8 +84,13 @@ a {
     height: auto;
 }
 
-.flex {
+.layout {
   display: flex;
+}
+
+.works .layout {
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .ml-au {
@@ -233,7 +251,7 @@ a {
         color: #ffffff;
         margin-left: auto;
         margin-right: 3rem;
-        z-index: 300px;
+        z-index: 300;
     }
 
     .container {
@@ -263,7 +281,7 @@ a {
         top: 0;
         right: -100%;
         transition: .5s;
-        z-index: 100px;
+        z-index: 100;
         
     }
     .header_lists {
@@ -303,7 +321,11 @@ a {
       transform: translate(-7%, -53%);
     }
 
-    .mt-50 {
-      margin-top: 160px;
+    .works {
+      margin-top: 9rem;
+    }
+
+    .layout {
+      display: block;
     }
 }

@@ -99,15 +99,43 @@ document.getElementById('pageTopBtn').addEventListener('click', () => {
 
 
 //aboutME
-window.addEventListener('DOMContentLoaded', () => {
-  timelinr({
-    orientation: 'vertical',
-    issuesSpeed: 300,
-    datesSpeed: 100,
-    arrowKeys: true,
-    startAt: 3
+document.addEventListener("DOMContentLoaded", function () {
+  // Get timeline elements
+  const dates = document.getElementById("dates");
+  const issues = document.getElementById("issues");
+
+  // Add click event listener to each date link
+  dates.addEventListener("click", function (event) {
+    if (event.target.tagName === "A" && !event.target.classList.contains("selected")) {
+      // Remove 'selected' class from all date links
+      const dateLinks = dates.getElementsByTagName("a");
+      for (const link of dateLinks) {
+        link.classList.remove("selected");
+      }
+
+      // Add 'selected' class to the clicked date link
+      event.target.classList.add("selected");
+
+      // Get the corresponding issue element and remove 'selected' class from all issues
+      const selectedYear = event.target.getAttribute("href").substring(1);
+      const issueElements = issues.getElementsByTagName("li");
+      for (const issue of issueElements) {
+        issue.classList.remove("selected");
+      }
+
+      // Add 'selected' class to the issue corresponding to the clicked date
+      const selectedIssue = document.getElementById(selectedYear);
+      selectedIssue.classList.add("selected");
+
+      // Scroll to the selected issue element
+      selectedIssue.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
+
+
+
+
 
 
 

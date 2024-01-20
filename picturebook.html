@@ -28,7 +28,7 @@
     <main class="inner">
         <h1 class="mt-30">Work</h1>
         <div class="img_margin">
-            <h2><span class="ft-16">絵本で非認知能力をのばす</span><br>絵本Webアプリ</h2>
+            <h2><span class="ft-16">絵本の読み聞かせで非認知能力をのばす</span><br>おはなしパレット</h2>
             <h4>UI/UX, Programming</h4>
             <video src="demo.mp4" class="video_layout" poster="img/picturebookk/picturebook.png" loop autoplay controls></video>
         </div>
@@ -38,61 +38,96 @@
         <h5>使用ツール<br><span>Figma, HTML, CSS, JS</span></h5>
         <section class="mt-50">
             <h2>今までとは異なる、新しい絵本読み聞かせ体験</h2>
-            <p>作成中</p>
-        </section>
-        <section class="mt-30">
-            <h2>UIフロー</h2>
             <div>
-                <div>
-                    <img src="img/picturebookk/picturebook_front.svg" class="img_layout mt-50">
-                    <img src="img/picturebookk/picturebook_front2.svg" class="img_layout">
-                    <img src="img/picturebookk/momotaro.svg" class="img_layout">
-                </div>
-                <div>
-                    <img src="img/picturebookk/picturebook_question.svg" class="img_layout">
-                    <img src="img/picturebookk/picturebook_final.svg" class="img_layout">
-                    <img src="img/picturebookk/picturebook_create.svg" class="img_layout">
-                </div>
+                <img src="img/picturebookk/picturebook_front.svg" class="img_layout mt-50">
+                <img src="img/picturebookk/picturebook_final.svg" class="img_layout">
+                <img src="img/picturebookk/picturebook_front2.svg" class="img_layout">
             </div>
+            <ul>
+                <li>読み上げてくれる音声機能付き！</li>
+                <li>質問機能があって子どもたちと対話できる</li>
+                <li>月齢や年齢に合わせた絵本をつくれる！</li>
+            </ul>
         </section>
         <section class="mt-30">
             <h2>制作過程</h2>
             <details class="accordion">
-                <summary>1.リサーチで「幼児から非認知能力を上げることの大切さ」に気づく</summary>
-                <p>非認知能力とは、「物事に対する考え方、取り組む姿勢、行動など日常生活・社会活動において重要な影響を及ぼす能力」を指します。<br>
-                   私たちのプロジェクトでは、目的が2つあります。一つ目は幼児の非認知能力を上げること。
-                   そして二つ目は幼児のコミュニケーション力を上げることです。
-                <p>日本学生支援機構による調査では、「学校内で対人関係に関する相談が多い」現状があります。
+                <summary class="overwrap">1.リサーチで「幼児から非認知能力を上げることの大切さ」に気づく</summary>
+                <p>情報連携実習3ではチーム内でスケジュールや役割分担を話し合いながら決めています。
+                    私は学部で学んだUXデザインの考え方を実践すべく、ユーザーリサーチを入念に行いました。
+                </p>
+                <p>非認知能力とは、「物事に対する考え方、取り組む姿勢、行動など日常生活・社会活動において重要な影響を及ぼす能力」を指しています。<br>
+                   このプロジェクトにおける目的は2つです。一つ目は幼児の非認知能力を上げること。
+                   そして二つ目は幼児のコミュニケーション力を上げることです。</p>
+                <p>日本学生支援機構による調査では、「学校内で対人関係に関する相談が多い」という現状があります。
                     学生たちは自分の心や相手の気持ちを想像し、理解することができていないのではないかと
-                    私たちは考えました。特にコミュニケーション力や主体性といった非認知能力が低いからではないかと
-                    仮説を立てています。<br>
-                    さらに調査を進めたところ、就学前から非認知能力を身につけておくほうが、その人の幸福度が上がるという
-                    データが見つかりました。そこで幼児教育の一環として、ターゲットユーザーを幼児向けにすることにしました。
+                    私たちは考えました。特にコミュニケーション力や主体性といった非認知能力が関連しているのではないかと
+                    仮説を立てています。さらに調査を進めたところ、就学前から非認知能力を身につけておくほうが、その人の幸福度が上がるという
+                    データが見つかりました。
+                </p>
+                <p>
+                    そこで対人関係スキルの向上を幼児教育の一環として捉え、ターゲットユーザーを4～5歳の幼児にしました。
                 </p>
                 <ul>
                     <span>参考文献</span><br>
 
-                    <li></li>https://www.mext.go.jp/b_menu/shingi/chousa/shotou/075/shiryo/__icsFiles/afieldfile/2010/06/22/1294462_03.pdf<br>
-                    <li></li>https://berd.benesse.jp/jisedai/research/detail1.php?id=5784
+                    <li class="overwrap">https://www.mext.go.jp/b_menu/shingi/chousa/shotou/075/shiryo/__icsFiles/afieldfile/2010/06/22/1294462_03.pdf</li>
+                    <li class="overwrap">https://berd.benesse.jp/jisedai/research/detail1.php?id=5784</li>
                 </ul>
+            </details>
+            <h3>▼</h3>
+            <details class="accordion">
+                <summary class="overwrap">2.コンセプトは「アウトプットを重視した、絵本読み聞かせWebアプリ」</summary>
+                <p>子供に読み聞かせを行うとき、日本では大人が一方的に文章を読み進めるおだやかな雰囲気があります。
+                    しかし、アメリカでは親子が対話をしながら絵本を読み進めています。例えばお話の途中に質問を挟むことで
+                    子どもに問いかけることができます。このやり方で進めると、思考力や読解力、説明力などの
+                    言語能力を伸ばせることが分かりました。
+                </p>
+                <p>ただ今回のプロジェクトの利用シーンとしては保育所や幼稚園などを提案しています。
+                    対話型の読み聞かせは脳を活性化させるため、就寝前の読み聞かせ利用が多い家庭では
+                    保護者があまり体験を魅力に感じないのではないかと想定されるからです。また、令和4年度の
+                    調査では、認可保育所によって絵本蔵数の格差があることや保育所の経営予算が不十分であること、保育士の人手不足
+                    などの課題が多く残っている現状から、需要があると判断しました。</p>
+                <p>
+                    よって、改めてターゲットユーザーを幼児と保育士と定義しなおしました。ペルソナは「絵本の読み聞かせに不安を感じている新入り保育士」
+                    と「絵本読み聞かせ時に反応が薄い4～5歳児」とします。
+                </p>
+                <img src="img/picturebookk/Group10_team5発表資料.png" class="img_layout2">
+                <img src="img/picturebookk/Group10_team5発表資料 (1).png" class="img_layout2"> 
+                <ul>
+                    <span>参考文献</span>
+                    <li class="overwrap">https://cedep.meclib.jp/popular_leaflet_02/book/data/all_page.pdf</li>
+                </ul>                  
+            </details>
+            <h3>▼</h3>
+            <details class="accordion">
+                <summary class="overwrap">3.異なる専門分野の学生と連携しながら開発を進める</summary>
+                <p>絵本読み聞かせWebアプリには、3つの機能があります。一つ目は音声機能です。</p>
+                <img src="img/picturebookk/momotaro.svg" class="img_layout">
 
-
-                <img src="#">
+                <p>有名な日本昔話やChatGPTで生成した新しいおはなしの計5つありますが、すべてその場で再生できます。
+                    ペルソナの悩みとして「読み聞かせのスキル不足による不安」があり、特に「抑揚やイントネーションを工夫するスキル」が求められていると分かりました。
+                    しかし音声機能がついているため、保育士は安心して子供たちの反応をみることに集中できると考えます。</p>
+                <p>二つ目は質問機能、三つ目はおはなし作成機能です。</p>
+                <img src="img/picturebookk/picturebook_question.svg" class="img_layout">
+                <img src="img/picturebookk/picturebook_create.svg" class="img_layout">
+                <p>質問内容はChatGPTを利用して作成し、音声で読み上げられます。おはなし作成機能にも
+                    ChatGPTが利用されており、おはなしの続きや新しい物語など要望に応えてくれます。
+                </p>
+                <p>このプロジェクトには、エンジニアリングやビジネスを専攻とするメンバーがいます。そのため、お互いの考え方や
+                    得意・不得意を話し合いながら役割分担を決めました。私はフロントエンドのデザインと実装を担当し、ペルソナをふまえて、子どもが思わず目を引くポップさ表現しようと色とアニメーションで工夫しました。
+                    また保育士の操作性も考慮して一クリックで飛べるようにしています。                    
+                </p>
+                
             </details>
             <h3>▼</h3>
             <details class="accordion">
-                <summary>2.コンセプトは「アウトプットを重視した、絵本読み聞かせWebアプリ」</summary>
-                <p>目を引く可愛らしさとスタイリッシュさを兼ね備えています。</p>
-            </details>
-            <h3>▼</h3>
-            <details class="accordion">
-                <summary>3.異なる専門分野の学生と連携しながら開発を進める</summary>
-                <p>目を引く可愛らしさとスタイリッシュさを兼ね備えています。</p>
-            </details>
-            <h3>▼</h3>
-            <details class="accordion">
-                <summary>4.今後は、幼児の子を持つ家族や保育士に評価してもらう</summary>
-                <p>目を引く可愛らしさとスタイリッシュさを兼ね備えています。</p>
+                <summary class="overwrap">4.今後は、幼児の子を持つ家族や保育士に評価してもらい、機能の改善を続ける</summary>
+                <img src="img/picturebookk/Group10_team5発表資料 (2).png" class="img_layout2">
+                <p>このように私たちは幼児の非認知能力を向上するアイデアとしてこの「おはなしパレット」を提案しますが、
+                    本当にペルソナが満足する体験なのか、また画面操作においてユーザビリティが優れているのかを客観的に評価する必要があります。
+                    SD法や評定法を用いた質問紙調査や、実際に保育所での利用体験をしていただく実験観察インタビューを検討し、分析したいと考えています。
+                </p>
             </details>
         </section>
         <div>

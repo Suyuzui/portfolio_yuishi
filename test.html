@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .timeline {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE 10+ */
+    }
+
+    .timeline::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+
+    .year {
+      cursor: pointer;
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-right: 10px;
+    }
+
+    .content {
+      width: 100%;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+  <title>Timeline Animation</title>
+</head>
+<body>
+
+<div class="timeline" id="timeline">
+  <div class="year" data-index="0">2020</div>
+  <div class="year" data-index="1">2021</div>
+  <div class="year" data-index="2">2022</div>
+  <div class="year" data-index="3">2023</div>
+  <!-- Add more years as needed -->
+</div>
+
+<div class="content" id="content">
+  <div>Content for 2020</div>
+  <div>Content for 2021</div>
+  <div>Content for 2022</div>
+  <div>Content for 2023</div>
+  <!-- Add more content as needed -->
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const timeline = document.getElementById('timeline');
+    const content = document.getElementById('content');
+
+    timeline.addEventListener('click', (event) => {
+      if (event.target.classList.contains('year')) {
+        const index = event.target.dataset.index;
+        const offset = index * 100; // Assuming each year takes 100% width
+
+        content.style.transform = `translateX(-${offset}%)`;
+
+        // Optionally, you can add an active class to highlight the selected year
+        const years = document.querySelectorAll('.year');
+        years.forEach(year => year.classList.remove('active'));
+        event.target.classList.add('active');
+      }
+    });
+
+    // Set initial state
+    const startAt = 3;
+    const initialOffset = startAt * 100;
+    content.style.transform = `translateX(-${initialOffset}%)`;
+
+    // Optionally, set the initial active class
+    const initialActiveYear = document.querySelector(`.year[data-index="${startAt}"]`);
+    if (initialActiveYear) {
+      initialActiveYear.classList.add('active');
+    }
+  });
+</script>
+
+</body>
+</html>

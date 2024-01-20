@@ -31,6 +31,11 @@ h1 {
   margin-right: 70px;
 }
 
+
+.overwrap {
+  overflow-wrap: break-word;
+}
+
 .header {
   padding: 0px 30px;
   position: fixed;
@@ -43,7 +48,7 @@ h1 {
 .inner {
     max-width: 100%;
     margin: 0 auto;
-    padding: 30px 50px 0px 50px;
+    padding: 30px;
 }
 
 .header_title:hover {
@@ -323,7 +328,7 @@ a.btn_style::before {
   transform: translateY(-10px);
   opacity: 0;
   margin: 0;
-  padding: 1em 2em 2em 2em;
+  padding: 1em;
   color: #333333;
   transition: transform .5s, opacity .5s;
 }
@@ -369,7 +374,6 @@ a.btn_style::before {
   position: relative;
   background: linear-gradient(-45deg, #fafafa, #9a9a9a) fixed;
   padding: 30px;
-  border-radius: 3%;
   z-index: 0;
 }
 @keyframes GradietionAnimation { 
@@ -389,6 +393,14 @@ a.btn_style::before {
 }
 
 
+.img_layout2 {
+  width:45%;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+
+/*戻るボタン*/
 /* ボタンのデザイン */
 #pageTopBtn {
   position: fixed;
@@ -434,6 +446,28 @@ a.btn_style::before {
   transition: all .5s;
   transform: translateY(-50%) rotate(45deg);
 }
+
+
+/*パンくずリスト*/
+
+.nav_layout {
+  margin: 4rem 0;
+}
+
+.breadcrumb {
+  display: flex;
+  font-size: 20px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.breadcrumb li:not(:last-of-type)::after {
+  content: "›";
+  margin: 0 .6em; /* 記号の左右の余白 */
+  color: #777; /* 記号の色 */
+}
+
 
 @media screen and (max-width: 768px) {
     .tab {
@@ -551,4 +585,19 @@ a.btn_style::before {
       display: block;
       width: 100%;
     }
+}
+
+
+@media screen and (max-width:426px) {
+  .accordion summary::after {
+    width: 13px;
+    height: 7.5px;
+  }  
+}
+
+@media screen and (max-width:376px) {
+  .accordion summary::after {
+    width: 24px;
+    height: 11px;
+  }  
 }

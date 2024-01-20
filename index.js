@@ -88,3 +88,26 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+
+//戻るボタン
+document.getElementById('pageTopBtn').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+
+//aboutME
+window.addEventListener('DOMContentLoaded', () => {
+  timelinr({
+    orientation: 'vertical',
+    issuesSpeed: 300,
+    datesSpeed: 100,
+    arrowKeys: true,
+    startAt: 3
+  });
+});
+
+
+

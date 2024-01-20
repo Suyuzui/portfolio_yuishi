@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yuishi</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="top">
         <div class="header_inner">
             <h3 class="header_title"><a href="index.html">Yui Suzuki's Portfolio</a></h3>
             <div class="responsive_btn">
@@ -29,7 +30,7 @@
         <div class="img_margin">
             <h2><span class="ft-16">絵本で非認知能力をのばす</span><br>絵本Webアプリ</h2>
             <h4>UI/UX, Programming</h4>
-            <img src="img/picturebookk/picturebook.png" alt="mini" class="container"> 
+            <video src="demo.mp4" class="video_layout" poster="img/picturebookk/picturebook.png" loop autoplay controls></video>
         </div>
         <h5>メンバー<br><span>情報連携実習3</span></h5>
         <h5>担当<br><span>UI/UX, Front end programming</span></h5>
@@ -42,15 +43,41 @@
         <section class="mt-30">
             <h2>UIフロー</h2>
             <div>
-                <img src="img/picturebookk/picturebook_front.svg" class="img_layout mt-50">
-                <img src="img/picturebookk/momotaro.svg" class="img_layout">
+                <div>
+                    <img src="img/picturebookk/picturebook_front.svg" class="img_layout mt-50">
+                    <img src="img/picturebookk/picturebook_front2.svg" class="img_layout">
+                    <img src="img/picturebookk/momotaro.svg" class="img_layout">
+                </div>
+                <div>
+                    <img src="img/picturebookk/picturebook_question.svg" class="img_layout">
+                    <img src="img/picturebookk/picturebook_final.svg" class="img_layout">
+                    <img src="img/picturebookk/picturebook_create.svg" class="img_layout">
+                </div>
             </div>
         </section>
         <section class="mt-30">
             <h2>制作過程</h2>
             <details class="accordion">
                 <summary>1.リサーチで「幼児から非認知能力を上げることの大切さ」に気づく</summary>
-                <p>私たちのプロジェクトでは、目的が2つあります。</p>
+                <p>非認知能力とは、「物事に対する考え方、取り組む姿勢、行動など日常生活・社会活動において重要な影響を及ぼす能力」を指します。<br>
+                   私たちのプロジェクトでは、目的が2つあります。一つ目は幼児の非認知能力を上げること。
+                   そして二つ目は幼児のコミュニケーション力を上げることです。
+                <p>日本学生支援機構による調査では、「学校内で対人関係に関する相談が多い」現状があります。
+                    学生たちは自分の心や相手の気持ちを想像し、理解することができていないのではないかと
+                    私たちは考えました。特にコミュニケーション力や主体性といった非認知能力が低いからではないかと
+                    仮説を立てています。<br>
+                    さらに調査を進めたところ、就学前から非認知能力を身につけておくほうが、その人の幸福度が上がるという
+                    データが見つかりました。そこで幼児教育の一環として、ターゲットユーザーを幼児向けにすることにしました。
+                </p>
+                <ul>
+                    <span>参考文献</span><br>
+
+                    <li></li>https://www.mext.go.jp/b_menu/shingi/chousa/shotou/075/shiryo/__icsFiles/afieldfile/2010/06/22/1294462_03.pdf<br>
+                    <li></li>https://berd.benesse.jp/jisedai/research/detail1.php?id=5784
+                </ul>
+
+
+                <img src="#">
             </details>
             <h3>▼</h3>
             <details class="accordion">
@@ -68,6 +95,9 @@
                 <p>目を引く可愛らしさとスタイリッシュさを兼ね備えています。</p>
             </details>
         </section>
+        <div>
+            <button id="pageTopBtn"></button>
+        </div>
     </main>
     
     <footer class="footer">

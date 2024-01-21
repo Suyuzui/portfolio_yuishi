@@ -99,13 +99,13 @@ document.getElementById('pageTopBtn').addEventListener('click', () => {
 
 
 //aboutME
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   // Get timeline elements
   const dates = document.getElementById("dates");
   const issues = document.getElementById("issues");
 
   // Add click event listener to each date link
-  dates.addEventListener("click", function (event) {
+  dates.addEventListener("click", (event) => {
     if (event.target.tagName === "A" && !event.target.classList.contains("selected")) {
       // Remove 'selected' class from all date links
       const dateLinks = dates.getElementsByTagName("a");
@@ -127,11 +127,15 @@ document.addEventListener("DOMContentLoaded", function () {
       const selectedIssue = document.getElementById(selectedYear);
       selectedIssue.classList.add("selected");
 
-      // Scroll to the selected issue element
-      selectedIssue.scrollIntoView({ behavior: "smooth" });
+      // Scroll to the selected issue element with smooth scroll
+      const yOffset = -300; // Adjust this value as needed
+      const elementTop = selectedIssue.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: elementTop, behavior: "smooth" });
     }
   });
 });
+
+
 
 
 

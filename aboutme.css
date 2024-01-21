@@ -278,8 +278,8 @@ h1,h2,h4,h5,h6 {
     padding-left: 20%;
 }	
     #issues li {
-        max-width: 300px;
-        height: 600px;
+        max-width: 610px;
+        height: 700px;
         list-style: none;
 }
         #issues li.selected img {
@@ -330,7 +330,7 @@ h1,h2,h4,h5,h6 {
         background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png') repeat-x;
     }
     #grad_bottom {
-        bottom: 0;
+        bottom: -5;
         background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png') repeat-x;
     }
 
@@ -546,5 +546,15 @@ h1,h2,h4,h5,h6 {
               display: block;
               width: 100%;
             }
+
+
+            
+        }
+
+
+        @media screen and (max-width: 500px) {
+          #timeline {
+            display: block;
+          }          
         }
         

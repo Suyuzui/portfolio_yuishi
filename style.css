@@ -24,8 +24,10 @@ h1 {
   margin-top: 30px;
 }
 .mt-50 {
-  margin-top: 50px;
+  margin-top: 9.5rem;
 }
+
+.mt-
 
 .mr-70 {
   margin-right: 70px;
@@ -163,7 +165,7 @@ a.btn_style::before {
   width: 100%;
   height: inherit;
   border-radius: inherit;
-  background: linear-gradient(82.3deg, #f9c2eb, #8338ec) fixed;
+  background: linear-gradient(82.3deg, #f9e5c2, #9f6104) fixed;
   transition: all 0.475s;
 }
 
@@ -239,8 +241,9 @@ a.btn_style::before {
 .wave_content {
     position: relative;
     margin: 1rem;
-    padding: 3rem;
+    padding: 0rem;
     z-index: -1;
+    top: 15vh;
 
   }
 
@@ -248,34 +251,37 @@ a.btn_style::before {
   position: relative;
   padding: 1rem;
   z-index: -1;
+  top: 7vh;
 }
   
 .wave_content h2 {
-    color: #fff;
-    font-size: 4rem;
+    color: #040325;
+    font-size: 9rem;
     position: absolute;
     transform: translate(-33%, -116%);
+    top: 20vh;
+    left: 15rem;
 }
 
 .wave_content2 h2 {
-  color: #fff;
-  font-size: 3.5rem;
+  color: #040325;
+  font-size: 3rem;
   position: absolute;
   transform: translate(-4%, -120%);
 }
   
 .wave_content, .wave_content2 h2:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 2px #8338ec;
+    -webkit-text-stroke: 2px #9a9a9a;
 }
   
 .wave_content h2:nth-child(2) {
-    color: #c19bf5;
+    color: #fafafa;
     animation: animate 4s ease-in-out infinite;
 }
 
 .wave_content2 h2:nth-child(2) {
-  color: #c19bf5;
+  color: #040325;
   animation: animate 4s ease-in-out infinite;
 }
 
@@ -298,8 +304,8 @@ a.btn_style::before {
   align-items: center;
   position: relative;
   padding: 1em 2em;
-  border-left: 5px solid #8338ec;
-  background-color: #f2f2f2;
+  border-left: 5px solid #9a9a9a;
+  background-color: #fafafa;
   color: #333333;
   font-weight: 600;
   cursor: pointer;
@@ -372,7 +378,7 @@ a.btn_style::before {
 
 .works {
   position: relative;
-  background: linear-gradient(-45deg, #fafafa, #9a9a9a) fixed;
+  /*background: linear-gradient(-45deg, #fafafa, #9a9a9a) fixed;*/
   padding: 30px;
   z-index: 0;
 }
@@ -482,17 +488,32 @@ a.btn_style::before {
       display: block;
     }
 
+    .wave_content2 {
+      position: relative;
+      padding: 1rem;
+      z-index: -1;
+      top: 0vh;
+      left: 1rem;
+    }
+
+    .wave_content h2 {
+      color: #040325;
+      font-size: 7rem;
+      position: absolute;
+      transform: translate(-33%, -116%);
+      width: max-content;
+      top: 2vh;
+      left: 13rem;
+    }
+
     .wave_content2 h2{
-      inline-size: 306px;
-      overflow-wrap: break-word;
       color: #fff;
       position: absolute;
-      transform: translate(-7%, -53%);
       z-index: -1;
     }
 
     .works {
-      margin-top: 9rem;
+      margin-top: 14rem;
     }
 
     .layout {
@@ -512,7 +533,7 @@ a.btn_style::before {
       margin: auto;
       padding: 0 4rem;
       border-radius: 100vw;
-      background: linear-gradient(82.3deg, #f9c2eb, #8338ec) fixed;
+      background: linear-gradient(-45deg, #fafafa, #9a9a9a) fixed;
       background-size: 100%;
       z-index: 0;
       
@@ -592,7 +613,36 @@ a.btn_style::before {
   .accordion summary::after {
     width: 13px;
     height: 7.5px;
-  }  
+  }
+
+  .wave_content {
+    margin: 0;
+  }
+
+  .wave_content2 {
+    left: 0;
+  }
+
+  .wave_content h2 {
+    left: 7rem;
+    font-size: 4rem;
+  }
+
+  .wave_content2 h2 {
+    font-size: 2rem;
+  }
+
+  .wave_content h2:nth-child(2) {
+    animation: none;
+}
+
+  .wave_content2 h2:nth-child(2) {
+    animation: none;
+  }
+
+  .works {
+    margin-top: 4rem;
+  }
 }
 
 @media screen and (max-width:376px) {
